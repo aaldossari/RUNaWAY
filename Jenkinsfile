@@ -19,6 +19,7 @@ pipeline {
 
 		stage('Build') {
 			steps {
+				sh 'usermod -a -G docker jenkins'
 				sh 'docker build -t aldossari/runaway:latest .'
 			}
 		}
