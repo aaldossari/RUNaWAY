@@ -5,7 +5,7 @@ services:
     container_name: English2Arabic_API
     build: ./api
     environment:
-      - CONNECTION_STRING=postgres://MuhannadSinan:DevOps@2022@db/English2Arabic
+      - CONNECTION_STRING=postgres://AbdulazizAldossari:DevOps@2022@db/English2Arabic
     depends_on:
       - db
     networks:
@@ -28,7 +28,7 @@ services:
     image: postgres:11.2-alpine
     container_name: English2Arabic_DB
     environment:
-      POSTGRES_USER: MuhannadSinan
+      POSTGRES_USER: AbdulazizAldossari
       POSTGRES_PASSWORD: DevOps@2022
       POSTGRES_DB: English2Arabic
     volumes:
