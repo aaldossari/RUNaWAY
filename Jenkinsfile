@@ -19,7 +19,7 @@ pipeline {
 
 		stage('Build') {
 			steps {
-				sh 'docker build -t mohanadsinan/runaway:latest .'
+				sh 'docker build -t aldossari/runaway:latest .'
 			}
 		}
 
@@ -31,7 +31,7 @@ pipeline {
 
 		stage('Push') {
 			steps {
-				sh 'docker push mohanadsinan/runaway:latest'
+				sh 'docker push aldossari/runaway:latest'
 			}
 		}
 
